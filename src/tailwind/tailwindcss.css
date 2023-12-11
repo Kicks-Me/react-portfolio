@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.screen-full {
+    min-height: calc(100vh - 3.5rem);
+}
+
+
+.progress-lable {
+    position: relative;
+    display: block;
+    height: 100%;
+    border-radius: 6px;
+    background: rgba(37, 99, 235, 1);
+    animation: progress 0.7s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes progress{
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
